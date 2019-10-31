@@ -12,12 +12,17 @@ const data = {
   email: 'jdoe@example.com'
 }
 
-// Create post
+// Create user
 // http.post('https://jsonplaceholder.typicode.com/users', data)
 //   .then(data => console.log(data))
 //   .catch(error => console.log(error));
 
-// Update post
-http.put('https://jsonplaceholder.typicode.com/users', data)
+// Update user
+// http.put('https://jsonplaceholder.typicode.com/users/2', data)
+//   .then(data => console.log(data))
+//   .catch(error => console.log(error));
+
+// Delete user
+http.delete('https://jsonplaceholder.typicode.com/users/2')
   .then(data => console.log(data))
   .catch(error => console.log(error));
